@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: rgba(28,57,107,1) !important
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+#mega-img-1 {
+    max-width: 290px;
+}
+header {
+    padding: 25px 0;
+    background-color: #343434;
+    color: #fff;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a.logo {
+    font-size: 24px;
+    color: #fff;
+}
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+ul, li {
+    list-style: none;
+}
+ul.nav-menu {
+    display: flex;
+    align-items: center;
+}
+ul.nav-menu li {
+    margin: 0 14px;
+}
+ul.nav-menu li a {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+}
+.mega-menu {
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+    top: 45px;
+    padding: 20px 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition:  0.42s;
+}
+.mega-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 15px;
+}
+.mega-menu-item{
+    display: flex;
+    align-items: center;
+    justify-self: space-around;
+    gap: 12px;
+    width: 100%;
+
+}
+.nav-mega-list {
+    position: relative;
+}
+.mega-menu-item a.active {
+    color: aqua;
+}
+img {
+    width: 100%;
+    height: auto !important;
+}
+.img-show {
+    flex-basis: 50%;
+    height: 100%;
+    background-size: cover;
+   
+}
+.nav-link {
+    position: relative;
+}
+.nav-link:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+}
+.mega-nav:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+.mega-nav::after {
+    opacity: 0;
+    visibility: hidden;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 40%;
+    transform: rotate(45deg);
+    top: 36px;
+    height:20px;
+    width: 20px;
+    background-color: #fff;
+}
+.mega-menu-item  h4 {
+    color: #343434;
+    margin-bottom: 17px;
+    font-family: Kanit , sans-serif  ;
+    font-weight: bold !important;
+}
+.mega-menu-item ul li {
+    margin: 0 0 15px 0 ;
+}
+
+.mega-menu-item ul li a {
+    font-family: Kanit, sans-serif !important;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    font-weight: normal;
+    color: #323232;
+    transition: all .2s ease;
+}
